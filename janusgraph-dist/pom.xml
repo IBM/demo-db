@@ -178,7 +178,7 @@
                 <executions>
                     <execution>
                         <id>get-elasticsearch</id>
-                        <phase>generate-test-resources</phase>
+                        <phase>SKIP-generate-test-resources</phase>
                         <goals>
                             <goal>wget</goal>
                         </goals>
@@ -195,7 +195,7 @@
                 <artifactId>maven-antrun-plugin</artifactId>
                 <executions>
                     <execution>
-                        <phase>generate-test-resources</phase>
+                        <phase>SKIP-generate-test-resources</phase>
                         <goals>
                             <goal>run</goal>
                         </goals>
@@ -647,7 +647,7 @@
                         <executions>
                             <execution>
                                 <id>assemble-full-distribution-archive</id>
-                                <phase>package</phase>
+                                <phase>SKIP-package</phase>
                                 <goals>
                                     <goal>single</goal>
                                 </goals>
@@ -717,7 +717,7 @@
                             </execution>
                             <execution>
                                 <id>unpack-janusgraph-core-javadocs</id>
-                                <phase>package</phase>
+                                <phase>SKIP-package</phase>
                                 <goals>
                                     <goal>single</goal>
                                 </goals>
